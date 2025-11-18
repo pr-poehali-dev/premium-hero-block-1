@@ -108,8 +108,8 @@ const Index = () => {
             
             <div className="animate-scale-in">
               <img 
-                src="https://cdn.poehali.dev/projects/2c7f8c31-ad1f-4bb0-b5aa-e2641986ac3e/files/28915116-6cb8-421e-aef9-e387fa389b1f.jpg"
-                alt="Уютный интерьер"
+                src="https://cdn.poehali.dev/files/cf302c25-631a-4e3e-9436-cf246acafe0b.png"
+                alt="Здание дома долголетия Родной"
                 className="rounded-3xl shadow-2xl w-full h-[500px] object-cover"
               />
             </div>
@@ -158,6 +158,11 @@ const Index = () => {
             </Card>
             
             <Card className="bg-card border-0 shadow-xl hover:shadow-2xl transition-all duration-500 animate-scale-in-delay-3 rounded-3xl overflow-hidden group">
+              <img 
+                src="https://cdn.poehali.dev/files/eb351228-7848-4c90-8847-dfee93ac76e8.png"
+                alt="Комната с медицинским оборудованием"
+                className="w-full h-[240px] object-cover"
+              />
               <CardContent className="p-10 space-y-6">
                 <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <Icon name="Heart" className="text-primary" size={32} />
@@ -193,8 +198,8 @@ const Index = () => {
             
             <div className="animate-scale-in">
               <img 
-                src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&auto=format&fit=crop"
-                alt="Wellness зона"
+                src="https://cdn.poehali.dev/files/9b6815da-c679-4932-90a8-db398ddb74b6.png"
+                alt="Бассейн и сауна"
                 className="rounded-3xl shadow-2xl w-full h-[500px] object-cover"
               />
             </div>
@@ -242,8 +247,8 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
             <div className="animate-scale-in order-2 md:order-1">
               <img 
-                src="https://cdn.poehali.dev/projects/2c7f8c31-ad1f-4bb0-b5aa-e2641986ac3e/files/7865bf72-2aaa-4ec8-a265-7ef77c07fcb1.jpg"
-                alt="Столовая"
+                src="https://cdn.poehali.dev/files/63300010-79b1-43fe-86cb-73f7dc53c176.png"
+                alt="Зал ЛФК и реабилитации"
                 className="rounded-3xl shadow-2xl w-full h-[500px] object-cover"
               />
             </div>
