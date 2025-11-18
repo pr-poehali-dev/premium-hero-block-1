@@ -174,6 +174,34 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-32 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
+            <div className="space-y-8 animate-slide-up">
+              <h2 className="text-5xl md:text-6xl font-light text-foreground">
+                Wellness в «Родном»
+              </h2>
+              
+              <p className="text-xl text-muted-foreground leading-relaxed">
+                Спокойный бассейн с тёплой водой и мягкая сауна доступны всем проживающим.
+              </p>
+              
+              <p className="text-xl text-foreground leading-relaxed">
+                <span className="font-semibold text-primary">Это комфортный способ поддерживать подвижность, расслабляться и восстанавливать силы.</span>
+              </p>
+            </div>
+            
+            <div className="animate-scale-in">
+              <img 
+                src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&auto=format&fit=crop"
+                alt="Wellness зона"
+                className="rounded-3xl shadow-2xl w-full h-[500px] object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-32 bg-card">
         <div className="container mx-auto px-6">
           <div className="text-center mb-20 space-y-4">
