@@ -55,9 +55,9 @@ const Index = () => {
           <div className="max-w-5xl mx-auto text-center">
             <div className="animate-fade-in mb-12">
               <img 
-                src="https://cdn.poehali.dev/files/6fd752b3-c9cf-416a-94ac-484d20b470c3.png" 
-                alt="Родной"
-                className="w-[180px] h-[180px] md:w-[180px] md:h-[180px] mx-auto object-contain animate-pulse"
+                src="https://cdn.poehali.dev/files/4f2a6df5-6607-4177-929d-58d0f396a614.png" 
+                alt="Родной - Дом долголетия"
+                className="w-[280px] h-[280px] md:w-[320px] md:h-[320px] mx-auto object-contain animate-pulse"
                 style={{ animationDuration: '3s' }}
               />
             </div>
