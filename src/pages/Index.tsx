@@ -19,32 +19,45 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-muted to-background overflow-hidden">
+      <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-[#F5F1E8] via-[#EFEAE1] to-[#F5F1E8] overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiM1QjdBNjQiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0djItaDJ2LTJoLTJ6bTAtNGgydjJoLTJ2LTJ6bS0yIDJ2LTJoLTJ2Mmgyem0wLTJ2LTJoMnYyaC0yem0yIDB2Mmgydi0yaC0yem0wIDJ2Mmgydi0yaC0yem0tNCAyaDJ2MmgtMnYtMnptMiAydjJoMnYtMmgtMnptMC00aDJ2MmgtMnYtMnptMC0yaDJ2MmgtMnYtMnoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-40"></div>
         
+        <svg 
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[45%] opacity-[0.08] pointer-events-none"
+          viewBox="0 0 200 200" 
+          fill="none" 
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path 
+            d="M100 30 L170 80 L170 170 L30 170 L30 80 Z M60 100 L60 150 L90 150 L90 100 Z M110 100 L110 150 L140 150 L140 100 Z" 
+            stroke="#5B7A64" 
+            strokeWidth="2" 
+            fill="none"
+          />
+        </svg>
+        
         <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-5xl mx-auto text-center space-y-8">
-            <div className="animate-fade-in">
+          <div className="max-w-5xl mx-auto text-center">
+            <div className="animate-fade-in mb-12">
               <img 
                 src="https://cdn.poehali.dev/projects/2c7f8c31-ad1f-4bb0-b5aa-e2641986ac3e/files/0a319211-2e83-41b4-a2b6-423171d56a66.jpg" 
                 alt="Родной"
-                className="w-32 h-32 mx-auto mb-8 rounded-2xl shadow-lg object-cover"
+                className="w-[180px] h-[180px] md:w-[180px] md:h-[180px] mx-auto rounded-3xl shadow-2xl object-cover"
               />
             </div>
             
-            <h1 className="text-6xl md:text-8xl font-light tracking-tight text-foreground animate-fade-in-delay-1">
-              Дом долголетия<br />
-              <span className="font-semibold text-primary">«Родной»</span>
+            <h1 className="text-[34px] md:text-[54px] leading-[1.15] font-semibold tracking-tight text-[#1C2B22] animate-fade-in-delay-1 mb-8">
+              Дом долголетия «Родной»
             </h1>
             
-            <p className="text-xl md:text-2xl text-muted-foreground font-light max-w-2xl mx-auto animate-fade-in-delay-2">
-              Тёплое пространство заботы и долгой жизни
+            <p className="text-[16px] md:text-[22px] leading-[1.45] text-[#46564B] font-light max-w-[540px] mx-auto animate-fade-in-delay-2 mb-12">
+              Тёплое пространство заботы,<br className="hidden md:block" /> спокойствия и долгой жизни
             </p>
             
             <div className="animate-fade-in-delay-3">
               <Button 
                 size="lg" 
-                className="text-lg px-12 py-8 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                className="text-[18px] px-[46px] py-[18px] h-auto rounded-xl bg-[#5B7A64] hover:bg-[#4E6D57] text-white shadow-lg hover:shadow-[0_12px_24px_rgba(0,0,0,0.08)] transition-all duration-300"
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Записаться на экскурсию
