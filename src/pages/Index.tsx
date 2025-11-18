@@ -176,6 +176,32 @@ const Index = () => {
               </CardContent>
             </Card>
           </div>
+          
+          <div className="mt-20 max-w-5xl mx-auto">
+            <Card className="bg-card border-0 shadow-2xl rounded-3xl overflow-hidden">
+              <div className="grid md:grid-cols-2 gap-0">
+                <img 
+                  src="https://cdn.poehali.dev/files/58b8c2cb-d9b9-436d-94a0-a458a8790561.png"
+                  alt="Двухместная комната"
+                  className="w-full h-full object-cover"
+                />
+                <CardContent className="p-10 md:p-12 space-y-6 flex flex-col justify-center">
+                  <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center">
+                    <Icon name="Users" className="text-primary" size={32} />
+                  </div>
+                  <h3 className="text-3xl md:text-4xl font-semibold text-foreground">
+                    Двухместные комнаты
+                  </h3>
+                  <p className="text-lg text-muted-foreground leading-relaxed">
+                    Вариант размещения для тех, кто предпочитает компанию и общение. Комфортные функциональные кровати, личные тумбочки, уютная обстановка — всё для спокойной совместной жизни.
+                  </p>
+                  <p className="text-lg text-foreground">
+                    <span className="font-semibold text-primary">Подходит для супружеских пар или тех, кто не хочет оставаться в одиночестве.</span>
+                  </p>
+                </CardContent>
+              </div>
+            </Card>
+          </div>
         </div>
       </section>
 
