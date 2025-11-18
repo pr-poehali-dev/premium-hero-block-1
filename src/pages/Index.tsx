@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -11,6 +11,17 @@ const Index = () => {
     phone: '',
     message: ''
   });
+  
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -20,10 +31,14 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-[#F5F1E8] via-[#EFEAE1] to-[#F5F1E8] overflow-hidden">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiM1QjdBNjQiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0djItaDJ2LTJoLTJ6bTAtNGgydjJoLTJ2LTJ6bS0yIDJ2LTJoLTJ2Mmgyem0wLTJ2LTJoMnYyaC0yem0yIDB2Mmgydi0yaC0yem0wIDJ2Mmgydi0yaC0yem0tNCAyaDJ2MmgtMnYtMnptMiAydjJoMnYtMmgtMnptMC00aDJ2MmgtMnYtMnptMC0yaDJ2MmgtMnYtMnoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-40"></div>
+        <div 
+          className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiM1QjdBNjQiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0djItaDJ2LTJoLTJ6bTAtNGgydjJoLTJ2LTJ6bS0yIDJ2LTJoLTJ2Mmgyem0wLTJ2LTJoMnYyaC0yem0yIDB2Mmgydi0yaC0yem0wIDJ2Mmgydi0yaC0yem0tNCAyaDJ2MmgtMnYtMnptMiAydjJoMnYtMmgtMnptMC00aDJ2MmgtMnYtMnptMC0yaDJ2MmgtMnYtMnoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-40 transition-transform duration-1000 ease-out"
+          style={{ transform: `translateY(${scrollY * 0.3}px)` }}
+        ></div>
         
         <svg 
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[45%] opacity-[0.08] pointer-events-none"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[45%] opacity-[0.08] pointer-events-none transition-transform duration-1000 ease-out"
+          style={{ transform: `translate(-50%, -50%) translateY(${scrollY * 0.15}px) scale(${1 + scrollY * 0.0002})` }}
           viewBox="0 0 200 200" 
           fill="none" 
           xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +57,8 @@ const Index = () => {
               <img 
                 src="https://cdn.poehali.dev/files/6fd752b3-c9cf-416a-94ac-484d20b470c3.png" 
                 alt="Родной"
-                className="w-[180px] h-[180px] md:w-[180px] md:h-[180px] mx-auto object-contain"
+                className="w-[180px] h-[180px] md:w-[180px] md:h-[180px] mx-auto object-contain animate-pulse"
+                style={{ animationDuration: '3s' }}
               />
             </div>
             
