@@ -40,9 +40,9 @@ const Index = () => {
           <div className="max-w-5xl mx-auto text-center">
             <div className="animate-fade-in mb-12">
               <img 
-                src="https://cdn.poehali.dev/projects/2c7f8c31-ad1f-4bb0-b5aa-e2641986ac3e/files/0a319211-2e83-41b4-a2b6-423171d56a66.jpg" 
+                src="https://cdn.poehali.dev/files/6fd752b3-c9cf-416a-94ac-484d20b470c3.png" 
                 alt="Родной"
-                className="w-[180px] h-[180px] md:w-[180px] md:h-[180px] mx-auto rounded-3xl shadow-2xl object-cover"
+                className="w-[180px] h-[180px] md:w-[180px] md:h-[180px] mx-auto object-contain"
               />
             </div>
             
