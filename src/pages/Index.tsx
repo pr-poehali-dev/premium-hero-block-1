@@ -371,6 +371,65 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-32 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12 space-y-4">
+              <h2 className="text-5xl md:text-6xl font-light text-foreground">
+                Как нас найти
+              </h2>
+              <p className="text-xl text-muted-foreground font-light">
+                Екатеринбург, ул. Двинская, 24
+              </p>
+            </div>
+            
+            <div className="rounded-3xl overflow-hidden shadow-2xl h-[500px] animate-scale-in">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?ll=60.597465%2C56.838011&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzExNDY2NRJf0KDQvtGB0YHQuNGPLCDQldC60LDRgtC10YDQuNC90LHRg9GA0LMsINGD0LvQuNGG0LAg0JTQstC40L3RgdC60LDRjywgMjQiCg3TxkZCFVs2XEI%2C&z=16.5"
+                width="100%"
+                height="500"
+                frameBorder="0"
+                allowFullScreen
+                style={{ position: 'relative' }}
+                title="Карта с адресом"
+              />
+            </div>
+            
+            <div className="mt-8 grid md:grid-cols-3 gap-8">
+              <Card className="bg-card border-0 shadow-lg rounded-2xl">
+                <CardContent className="p-8 text-center space-y-3">
+                  <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mx-auto">
+                    <Icon name="MapPin" className="text-primary" size={28} />
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground">Адрес</h3>
+                  <p className="text-muted-foreground">Екатеринбург, ул. Двинская, 24</p>
+                </CardContent>
+              </Card>
+              
+              <Card className="bg-card border-0 shadow-lg rounded-2xl">
+                <CardContent className="p-8 text-center space-y-3">
+                  <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mx-auto">
+                    <Icon name="Phone" className="text-primary" size={28} />
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground">Телефон</h3>
+                  <p className="text-muted-foreground">+7 (343) 200-77-11</p>
+                </CardContent>
+              </Card>
+              
+              <Card className="bg-card border-0 shadow-lg rounded-2xl">
+                <CardContent className="p-8 text-center space-y-3">
+                  <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mx-auto">
+                    <Icon name="Mail" className="text-primary" size={28} />
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground">Email</h3>
+                  <p className="text-muted-foreground">info@rodnoy-dom.ru</p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <footer className="py-16 bg-card border-t border-border">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-12">
