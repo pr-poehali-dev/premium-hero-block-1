@@ -63,11 +63,16 @@ const Index = () => {
             </div>
             
             <h1 className="text-[34px] md:text-[54px] leading-[1.15] font-semibold tracking-tight text-[#1C2B22] animate-fade-in-delay-1 mb-8">
-              Дом долголетия «Родной»
+              Дом долголетия «Родной» — место, где забота становится качеством жизни
             </h1>
             
-            <p className="text-[16px] md:text-[22px] leading-[1.45] text-[#46564B] font-light max-w-[540px] mx-auto animate-fade-in-delay-2 mb-12">
-              Тёплое пространство заботы,<br className="hidden md:block" /> спокойствия и долгой жизни
+            <p className="text-[16px] md:text-[22px] leading-[1.45] text-[#46564B] font-light max-w-[800px] mx-auto animate-fade-in-delay-2 mb-8">
+              Мы создали пространство, где люди старшего поколения живут в спокойной, уважительной и продуманной среде.
+              Здесь всё организовано так, чтобы человеку было комфортно, привычно и по-домашнему спокойно — каждый день.
+            </p>
+            
+            <p className="text-[16px] md:text-[20px] leading-[1.45] text-[#46564B] font-light max-w-[800px] mx-auto animate-fade-in-delay-2 mb-12">
+              Наша команда обеспечивает внимательное и профессиональное сопровождение, сохраняя естественный ритм жизни, привычки и ощущение собственного пространства.
             </p>
             
             <div className="animate-fade-in-delay-3">
@@ -88,13 +93,16 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
             <div className="space-y-6 animate-slide-up">
               <h2 className="text-5xl md:text-6xl font-light text-foreground">
-                Дом, где забота становится средой жизни
+                «Родной» — это современный дом долголетия
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Мы создаём пространство, где старшие живут спокойно, красиво и безопасно. 
-                Где внимание — не услуга, а состояние дома. Где каждый день проходит так, 
-                что на вопрос <span className="font-semibold text-foreground">«Как там?»</span> можно ответить: 
-                <span className="font-semibold text-primary"> «Как дом Родной».</span>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                В котором человек остаётся в центре внимания. Мы создаём атмосферу, где важны спокойствие, уважение, участие и человеческое тепло.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Где поддержка ощущается ненавязчиво, где удобно и безопасно жить, общаться, заниматься привычными делами и быть среди людей.
+              </p>
+              <p className="text-xl text-foreground leading-relaxed">
+                Наша философия проста: <span className="font-semibold text-primary">дом — это не стены, а среда, где тебя понимают, слышат и относятся по-человечески.</span>
               </p>
             </div>
             
@@ -113,10 +121,10 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-20 space-y-4">
             <h2 className="text-5xl md:text-6xl font-light text-foreground">
-              Три уровня заботы
+              Три уровня жизни
             </h2>
             <p className="text-xl text-muted-foreground font-light">
-              Чтобы поддержка росла вместе с человеком
+              Пространства для разных ритмов и потребностей
             </p>
           </div>
           
@@ -127,10 +135,10 @@ const Index = () => {
                   <Icon name="Home" className="text-primary" size={32} />
                 </div>
                 <h3 className="text-3xl font-semibold text-foreground">
-                  Активная жизнь
+                  Пространство активной жизни
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Просторные апартаменты, мастерские, спокойная безопасность
+                  Для тех, кто ценит общение, занятия и привычный ритм. Уютные комнаты, мастерские, мероприятия, прогулки, чтение, музыка — атмосфера, в которой легко оставаться в движении.
                 </p>
               </CardContent>
             </Card>
@@ -141,10 +149,10 @@ const Index = () => {
                   <Icon name="HeartHandshake" className="text-primary" size={32} />
                 </div>
                 <h3 className="text-3xl font-semibold text-foreground">
-                  Усиленная поддержка
+                  Пространство комфортного сопровождения
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Помощь рядом, регулярное наблюдение, внимание к быту и настроению
+                  Для людей, которым важно, чтобы рядом всегда были внимательные специалисты, готовые помочь в повседневных делах. Спокойная, структурированная среда, где сохраняются привычки и чувство самостоятельности.
                 </p>
               </CardContent>
             </Card>
@@ -155,10 +163,10 @@ const Index = () => {
                   <Icon name="Heart" className="text-primary" size={32} />
                 </div>
                 <h3 className="text-3xl font-semibold text-foreground">
-                  Круглосуточный уход
+                  Пространство постоянного внимания
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Профессиональная забота 24/7, деменция-friendly среда
+                  Среда, созданная для максимального комфорта и безопасности, с более тесным участием команды. Тихие комнаты, чуткое наблюдение, продуманная организация дня — всё, что делает жизнь спокойной и устойчивой.
                 </p>
               </CardContent>
             </Card>
@@ -170,30 +178,31 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-20 space-y-4">
             <h2 className="text-5xl md:text-6xl font-light text-foreground">
-              Профессиональная медицина.
+              Почему нас выбирают
             </h2>
-            <p className="text-3xl font-light text-primary">
-              Тёплая человеческая забота.
+            <p className="text-xl text-muted-foreground font-light">
+              Уважение, профессионализм и человеческое участие
             </p>
           </div>
           
-          <div className="grid md:grid-cols-5 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
             {[
-              { icon: 'Stethoscope', title: 'Гериатрия' },
-              { icon: 'UserRound', title: 'Медсёстры 24/7' },
-              { icon: 'Brain', title: 'Уход при деменции' },
-              { icon: 'Activity', title: 'Реабилитация' },
-              { icon: 'Pill', title: 'Лекарственный контроль' }
+              { icon: 'HeartHandshake', title: 'Уважительная среда', desc: 'Мы строим отношения, где к человеку относятся с деликатностью, вниманием и уважением.' },
+              { icon: 'Users', title: 'Профессиональная команда', desc: 'Специалисты с десятилетиями опыта работы. Внимательность, чуткость и умение быть рядом без давления.' },
+              { icon: 'Home', title: 'Продуманное пространство', desc: 'Спокойные комнаты, тихие зоны отдыха, естественный свет, тёплая палитра — всё создаёт ощущение дома.' },
+              { icon: 'Heart', title: 'Человеческое участие', desc: 'Разговор, прогулка, музыка, чай, хобби — здесь есть место для каждого маленького жизненного удовольствия.' },
+              { icon: 'Eye', title: 'Прозрачность для семьи', desc: 'Регулярное общение, открытость, возможность связаться в удобное время — семья всегда знает, что всё в порядке.' }
             ].map((item, index) => (
               <div 
                 key={index}
-                className={`text-center space-y-4 animate-slide-up`}
-                style={{ animationDelay: `${index * 0.2}s`, animationFillMode: 'both' }}
+                className={`space-y-4 animate-slide-up`}
+                style={{ animationDelay: `${index * 0.15}s`, animationFillMode: 'both' }}
               >
-                <div className="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto hover:bg-primary/20 transition-colors duration-300">
-                  <Icon name={item.icon} className="text-primary" size={40} />
+                <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center hover:bg-primary/20 transition-colors duration-300">
+                  <Icon name={item.icon} className="text-primary" size={32} />
                 </div>
-                <p className="text-lg font-medium text-foreground">{item.title}</p>
+                <h3 className="text-2xl font-semibold text-foreground">{item.title}</h3>
+                <p className="text-muted-foreground leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -212,27 +221,36 @@ const Index = () => {
             </div>
             
             <div className="space-y-8 animate-slide-up-delay order-1 md:order-2">
-              <h2 className="text-5xl md:text-6xl font-light text-foreground">
-                Прозрачность для семьи
+              <h2 className="text-5xl md:text-6xl font-light text-foreground mb-8">
+                Сопровождение и забота
               </h2>
               
-              <div className="space-y-6">
-                {[
-                  { icon: 'FileText', title: 'Ежедневные отчёты', desc: 'О самочувствии, питании, активностях' },
-                  { icon: 'Video', title: 'Видеозвонки', desc: 'Общайтесь в удобное время' },
-                  { icon: 'Users', title: 'Координатор семьи', desc: 'Личный контакт и поддержка' }
-                ].map((item, index) => (
-                  <div key={index} className="flex gap-4 items-start">
-                    <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <Icon name={item.icon} className="text-primary" size={24} />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-semibold text-foreground mb-1">{item.title}</h3>
-                      <p className="text-muted-foreground">{item.desc}</p>
-                    </div>
-                  </div>
-                ))}
+              <p className="text-xl text-muted-foreground leading-relaxed mb-8">
+                Команда «Родного» обеспечивает профессиональное сопровождение, которое органично вписывается в повседневную жизнь человека. Наши специалисты внимательно относятся к состоянию, привычкам и предпочтениям — спокойно, деликатно и уважительно.
+              </p>
+              
+              <div className="space-y-4">
+                <p className="text-lg text-muted-foreground flex items-start gap-3">
+                  <span className="text-primary mt-1">•</span>
+                  <span>наблюдению за самочувствием</span>
+                </p>
+                <p className="text-lg text-muted-foreground flex items-start gap-3">
+                  <span className="text-primary mt-1">•</span>
+                  <span>поддержанию привычного режима</span>
+                </p>
+                <p className="text-lg text-muted-foreground flex items-start gap-3">
+                  <span className="text-primary mt-1">•</span>
+                  <span>аккуратной организации дня</span>
+                </p>
+                <p className="text-lg text-muted-foreground flex items-start gap-3">
+                  <span className="text-primary mt-1">•</span>
+                  <span>психологическому и эмоциональному комфорту</span>
+                </p>
               </div>
+              
+              <p className="text-xl text-foreground mt-8">
+                <span className="font-semibold text-primary">Сопровождение здесь — это не про контроль, а про участие.</span>
+              </p>
             </div>
           </div>
         </div>
@@ -241,24 +259,43 @@ const Index = () => {
       <section className="py-32 bg-card">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center space-y-12">
-            <h2 className="text-5xl md:text-6xl font-light text-foreground">
-              Честная структура стоимости
+            <h2 className="text-5xl md:text-6xl font-light text-foreground mb-6">
+              Стоимость
             </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Стоимость проживания формируется открыто и понятно. Без скрытых платежей, без непредвиденных доплат.
+            </p>
             
             <Card className="bg-background border-0 shadow-xl rounded-3xl overflow-hidden">
               <CardContent className="p-12 space-y-6">
                 <div className="space-y-4 text-left">
-                  <div className="flex justify-between items-center py-4 border-b border-border">
-                    <span className="text-xl text-muted-foreground">Проживание</span>
-                    <span className="text-xl font-semibold text-foreground">Индивидуально</span>
+                  <div className="flex items-start gap-3 py-4 border-b border-border">
+                    <Icon name="Check" className="text-primary mt-1" size={24} />
+                    <div>
+                      <span className="text-xl font-semibold text-foreground block">Проживание</span>
+                      <span className="text-muted-foreground">В выбранном пространстве</span>
+                    </div>
                   </div>
-                  <div className="flex justify-between items-center py-4 border-b border-border">
-                    <span className="text-xl text-muted-foreground">Питание</span>
-                    <span className="text-xl font-semibold text-foreground">Включено</span>
+                  <div className="flex items-start gap-3 py-4 border-b border-border">
+                    <Icon name="Check" className="text-primary mt-1" size={24} />
+                    <div>
+                      <span className="text-xl font-semibold text-foreground block">Питание</span>
+                      <span className="text-muted-foreground">Трёхразовое, сбалансированное</span>
+                    </div>
                   </div>
-                  <div className="flex justify-between items-center py-4">
-                    <span className="text-xl text-muted-foreground">Уровень ухода</span>
-                    <span className="text-xl font-semibold text-foreground">По потребностям</span>
+                  <div className="flex items-start gap-3 py-4 border-b border-border">
+                    <Icon name="Check" className="text-primary mt-1" size={24} />
+                    <div>
+                      <span className="text-xl font-semibold text-foreground block">Сопровождение</span>
+                      <span className="text-muted-foreground">Участие команды в повседневной жизни</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3 py-4">
+                    <Icon name="Check" className="text-primary mt-1" size={24} />
+                    <div>
+                      <span className="text-xl font-semibold text-foreground block">Организация быта и досуга</span>
+                      <span className="text-muted-foreground">Мероприятия, прогулки, занятия</span>
+                    </div>
                   </div>
                 </div>
                 
@@ -280,10 +317,10 @@ const Index = () => {
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-12 space-y-4">
               <h2 className="text-5xl md:text-6xl font-light text-primary-foreground">
-                Записаться на экскурсию
+                Хотите увидеть дом «Родной» лично?
               </h2>
               <p className="text-xl text-primary-foreground/80 font-light">
-                Приезжайте познакомиться с домом и командой
+                Мы с удовольствием познакомим вас с нашими пространствами, покажем атмосферу и ответим на вопросы
               </p>
             </div>
             
@@ -313,7 +350,7 @@ const Index = () => {
                   
                   <div>
                     <Textarea
-                      placeholder="Расскажите немного о ваших потребностях"
+                      placeholder="Расскажите о том, что для вас важно"
                       value={formData.message}
                       onChange={(e) => setFormData({...formData, message: e.target.value})}
                       className="min-h-32 text-lg rounded-xl border-border resize-none"
@@ -340,7 +377,7 @@ const Index = () => {
             <div className="space-y-4">
               <h3 className="text-2xl font-semibold text-foreground">Дом долголетия «Родной»</h3>
               <p className="text-muted-foreground">
-                Тёплое пространство заботы и долгой жизни
+                Тёплый приём, открытость и уважительное отношение — с первого звонка
               </p>
             </div>
             
